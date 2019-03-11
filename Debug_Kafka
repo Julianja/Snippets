@@ -22,8 +22,10 @@ device.timeseriesValueReceived
 tenant.created
 tenant.deleted
 tenant.updated
-
+#############################################################
 ### Check status of any topic (e.g. on kubernetes master) ###
+#############################################################
+
 # kubectl exec --namespace <namespace_of_kafka> -it <kafka_pod_name> -- /opt/kafka/bin/kafka-topics.sh --zookeeper <zookeeper_endpoint> --describe --topic <topic_name>
 
 kubectl exec --namespace messaging -it kafka-0 -- /opt/kafka/bin/kafka-topics.sh --zookeeper zookeeper-client:2181 --describe --topic device.deleted
