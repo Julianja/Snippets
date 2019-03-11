@@ -1,4 +1,7 @@
+##############################################################################
 ### List all known topics in the kafka cluster (e.g. on kubernetes master) ###
+##############################################################################
+
 # kubectl exec --namespace <namespace_of_kafka> -it <kafka_pod_name> -- /opt/kafka/bin/kafka-topics.sh --zookeeper <zookeeper_endpoint> --list
 # --zookeeper 10.240.1.171
 # --zookeeper 10.240.1.160,10.240.1.171,10.240.1.68
